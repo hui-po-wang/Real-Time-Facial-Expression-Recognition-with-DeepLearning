@@ -46,6 +46,11 @@ Note that the version `Anaconda` provided may not be the latest one.
 ```
 conda install opencv
 ```
+If you fail to install opencv due to python version conflicts, try this command instead,
+```
+conda install -c menpo opencv3=3.1.0
+```
+the version 3.1.0 can be replaced with the lateset one, but in this project, I use `opencv 3.1.0`.
 #### Install Keras
 Keras is a high-level wrapper of Theano and Tensorflow, it provides friendly APIs to manipulate several kinds of deep learning models.
 ```
