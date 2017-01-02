@@ -4,10 +4,16 @@ A real-time facial expression recognition system through webcam streaming and CN
 ## Environment
 I provide my work environment for references.
 
+### Hadware
 CPU : i5-6500  
 GPU : nvidia GTX 960 2G  
 RAM : 8G  
 OS  : Ubuntu 16.04  
+
+### Software
+Keras 1.2.0  
+scikit-learn 0.18.1  
+opencv 3.1.0  
 
 ## Installation
 I strongly recommend you to use [`Anaconda`](https://www.continuum.io/downloads), which is a package manager and provides python virtual environment.  
@@ -24,3 +30,33 @@ For example, In Ubuntu, you can activate your virtual environment by,
 ```
 source activate env-name
 ```
+The following instructions will lead you to install dependencies, and I suggest you to fllow the order.
+#### Install scikit-learn
+```
+conda install scikit-learn
+```
+#### Install OpenCV
+Note that the version `Anaconda` provided may not be the latest one.
+```
+conda install opencv
+```
+#### Install Keras
+Keras is a high-level wrapper of Theano and Tensorflow, it provides friendly APIs to manipulate several kinds of deep learning models.
+```
+pip install --upgrade keras
+```
+#### Install pandas and h5py
+`pandas` can help you to preprocess data if you want train your own deep learning model.
+```
+conda install pandas
+```
+`h5py` is used to save weights of pre-trained models.
+```
+conda install h5py
+```
+## Usage
+After installing dependencies, you can move to `webcam` directory and simply type this command,
+```
+python webcam_detection.py
+```
+and the system will start detecting user's emotions and print results to the console.
