@@ -65,6 +65,21 @@ conda install pandas
 ```
 conda install h5py
 ```
+#### Configuration
+Before executing this project, you should make `Keras` use `Theano` backend by modifying configuration file in
+```
+~/.keras/keras.json
+```
+If it doesn't exist, you can create a new one, and then change the content to 
+```
+{
+    "image_dim_ordering": "th",
+    "epsilon": 1e-07,
+    "floatx": "float32",
+    "backend": "tensorflow"
+}
+```
+
 ## Usage
 After installing dependencies, you can move to `webcam` directory and simply type this command,
 ```
