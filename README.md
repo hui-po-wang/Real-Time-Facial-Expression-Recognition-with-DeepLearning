@@ -76,7 +76,7 @@ If it doesn't exist, you can create a new one, and then change the content to
     "image_dim_ordering": "th",
     "epsilon": 1e-07,
     "floatx": "float32",
-    "backend": "tensorflow"
+    "backend": "theano"
 }
 ```
 
