@@ -8,9 +8,9 @@ I provide my work environment for references.
 CPU : i5-6500  
 GPU : nvidia GTX 960 2G  
 RAM : 8G  
-OS  : Ubuntu 16.04  
 
 ### Software
+OS  : Ubuntu 16.04  
 Keras 1.2.0  
 scikit-learn 0.18.1  
 opencv 3.1.0  
