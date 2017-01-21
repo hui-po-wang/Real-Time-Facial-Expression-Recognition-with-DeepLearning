@@ -2,7 +2,7 @@
 A real-time facial expression recognition system through webcam streaming and CNN.
 
 ## Abstraction
-This project aims to recognize faci expression with CNN implemented by Keras. I also implement a real-time module which can real-time capture user's face through webcam steaming called by opencv. OpenCV cropped the face it detects from the original frames and resize the cropped images to 48x48 grayscale image, then take them as inputs of deep leanring model.
+This project aims to recognize faci expression with CNN implemented by Keras. I also implement a real-time module which can real-time capture user's face through webcam steaming called by opencv. OpenCV cropped the face it detects from the original frames and resize the cropped images to 48x48 grayscale image, then take them as inputs of deep leanring model. Moreover, this project also provides a function to combine users' spoken content and  facial expression detected by our system to generate corresponding sentences with appropriate emoticons.
 
 ## Dataset
 [fer2013](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data) is the dataset I chose, which is anounced in Kaggle competition in 2013.
@@ -36,6 +36,12 @@ For example, In Ubuntu, you can activate your virtual environment by,
 ```
 source activate env-name
 ```
+And,
+```
+source deactivate 
+```
+to exit the virtual environment.
+
 The following instructions will lead you to install dependencies, and I suggest you to fllow the order.
 #### Install scikit-learn
 ```
@@ -81,8 +87,23 @@ If it doesn't exist, you can create a new one, and then change the content to
 ```
 
 ## Usage
+### Simple facial expression detection
 After installing dependencies, you can move to `webcam` directory and simply type this command,
 ```
 python webcam_detection.py
 ```
-and the system will start detecting user's emotions and print results to the console.
+and the system will start detecting user's emotions and print results to the console.  
+### Affecting computing system
+If you want to combine facail expression detection and speech recognition to generate a completed sentence with appropriate emoticons,
+you should install an additional dependency.
+```
+pip install SpeechRecognition
+```
+After installing the above library, you can type this to lauch the detector.
+```
+python gen_sentence_with_emoticons.py
+```
+Launch the system and input "y" to start the detection, then you can speek something with facial expression to try to acquire a sentence with emoticons.
+
+## Contact
+If you have any problem about this project, you can send an e-mail to me.
