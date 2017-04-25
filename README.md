@@ -106,4 +106,5 @@ python gen_sentence_with_emoticons.py
 Launch the system and input "y" to start the detection, then you can speek something with facial expression to try to acquire a sentence with emoticons.
 
 ## Contact
+Please give me a star if you like my project.
 If you have any problem about this project, you can send an e-mail to me.
