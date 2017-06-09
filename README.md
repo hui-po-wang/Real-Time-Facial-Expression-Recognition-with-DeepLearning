@@ -77,9 +77,22 @@ Before executing this project, you should make `Keras` use `Theano` backend by m
 ~/.keras/keras.json
 ```
 If it doesn't exist, you can create a new one, and then change the content to 
+
+if you use kears 1 :
+
 ```
 {
     "image_dim_ordering": "th",
+    "epsilon": 1e-07,
+    "floatx": "float32",
+    "backend": "theano"
+}
+```
+if you use kears 2 :
+
+```
+{
+    "image_data_format": "th",
     "epsilon": 1e-07,
     "floatx": "float32",
     "backend": "theano"
