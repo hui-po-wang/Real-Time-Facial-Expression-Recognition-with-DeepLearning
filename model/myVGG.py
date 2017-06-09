@@ -8,6 +8,9 @@ from keras.layers.convolutional import Convolution2D, MaxPooling2D, ZeroPadding2
 from keras.optimizers import SGD
 import cv2, numpy as np
 
+from keras import backend as K
+K.set_image_dim_ordering('th')
+
 def VGG_16(weights_path=None, shape=(48, 48)):
     model = Sequential()
     model.add(ZeroPadding2D((1,1), input_shape=(1, 48, 48)))
