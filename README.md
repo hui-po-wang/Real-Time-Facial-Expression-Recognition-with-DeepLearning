@@ -1,7 +1,7 @@
 # Real-Time-Facial-Expression-Recognition-with-DeepLearning
 A real-time facial expression recognition system through webcam streaming and CNN.
 
-## Abstraction
+## Abstract
 This project aims to recognize facial expression with CNN implemented by Keras. I also implement a real-time module which can real-time capture user's face through webcam steaming called by opencv. OpenCV cropped the face it detects from the original frames and resize the cropped images to 48x48 grayscale image, then take them as inputs of deep leanring model. Moreover, this project also provides a function to combine users' spoken content and  facial expression detected by our system to generate corresponding sentences with appropriate emoticons.
 
 ## Dataset
