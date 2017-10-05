@@ -120,4 +120,3 @@ Launch the system and input "y" to start the detection, then you can speek somet
 
 ## Contact
 Please give me a star if you like my project.
-If you have any problem about this project, you can send an e-mail to me.
